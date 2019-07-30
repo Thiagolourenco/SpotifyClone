@@ -4,7 +4,7 @@ import { PodcastsTypes } from "../ducks/podcast";
 import { PlayerTypes } from "../ducks/player";
 
 import { load } from "./podcast";
-import { init, setPodcast, play, pause, prev, next } from "./player";
+import { init, setPodcast, play, pause, prev, next, reset } from "./player";
 
 export default function* rootSaga() {
   return yield all([
@@ -14,6 +14,7 @@ export default function* rootSaga() {
     takeLatest(PlayerTypes.PLAY, play),
     takeLatest(PlayerTypes.PAUSE, pause),
     takeLatest(PlayerTypes.PREV, prev),
-    takeLatest(PlayerTypes.NEXT, next)
+    takeLatest(PlayerTypes.NEXT, next),
+    takeLatest(PlayerTypes.RESET, reset)
   ]);
 }
