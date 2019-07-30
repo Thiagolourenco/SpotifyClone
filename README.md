@@ -7,13 +7,13 @@ App criado para colocar em prática o que venho estudando, utilizando React Nati
 
 - Após isso serguir os passos abaixo
 
--> git clone
+- git clone -> https://github.com/Thiagolourenco/SpotifyClone.git
 
--> npm install
+- npm install
 
--> react-native start 
+- react-native start 
 
--> (Abrir uma nova aba do terminal) react-native run-android
+- (Abrir uma nova aba do terminal) react-native run-android
 
 
 
